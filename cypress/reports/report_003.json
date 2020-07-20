@@ -1,0 +1,169 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-07-20T02:55:29.464Z",
+    "end": "2020-07-20T02:57:01.245Z",
+    "duration": 91781,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8d8acd28-8aa9-433a-b197-0f5df7e633f5",
+      "title": "",
+      "fullFile": "cypress/integration/sampletests/file_upload_test.js",
+      "file": "cypress/integration/sampletests/file_upload_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f6b7780f-8ec8-4991-933d-7a8f68ef0cc8",
+          "title": "file upload use cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "simple file upload",
+              "fullTitle": "file upload use cases simple file upload",
+              "timedOut": null,
+              "duration": 74744,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://automationpractice.com/index.php?controller=contact');\nvar yourFixturePath = 'image1.png';\ncy.get('#fileUpload').attachFile(yourFixturePath);",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://localhost:57038/__cypress/runner/cypress_runner.js:155493:13)\n    at http://localhost:57038/__cypress/runner/cypress_runner.js:156469:16\n    at tryCatcher (http://localhost:57038/__cypress/runner/cypress_runner.js:10130:23)\n    at http://localhost:57038/__cypress/runner/cypress_runner.js:5252:41\n    at tryCatcher (http://localhost:57038/__cypress/runner/cypress_runner.js:10130:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57038/__cypress/runner/cypress_runner.js:8065:31)\n    at Promise._settlePromise (http://localhost:57038/__cypress/runner/cypress_runner.js:8122:18)\n    at Promise._settlePromise0 (http://localhost:57038/__cypress/runner/cypress_runner.js:8167:10)\n    at Promise._settlePromises (http://localhost:57038/__cypress/runner/cypress_runner.js:8243:18)\n    at _drainQueueStep (http://localhost:57038/__cypress/runner/cypress_runner.js:4837:12)\n    at _drainQueue (http://localhost:57038/__cypress/runner/cypress_runner.js:4830:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57038/__cypress/runner/cypress_runner.js:4846:5)\n    at Async.drainQueues (http://localhost:57038/__cypress/runner/cypress_runner.js:4716:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:57038/__cypress/tests?p=cypress/integration/sampletests/file_upload_test.js:6:8)",
+                "diff": null
+              },
+              "uuid": "12f85bf1-a879-4cdb-b5c8-c6d08a4e6c2f",
+              "parentUUID": "f6b7780f-8ec8-4991-933d-7a8f68ef0cc8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "drag and drop file upload",
+              "fullTitle": "file upload use cases drag and drop file upload",
+              "timedOut": null,
+              "duration": 2777,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://css-tricks.com/examples/DragAndDropFileUploading/');\nvar yourFixturePath = 'image1.png';\ncy.get('#file').attachFile(yourFixturePath);\ncy.get('.box__success').should('contain.text', 'Done!');",
+              "err": {},
+              "uuid": "c2eae87d-9917-4e43-8b5c-2975cea53d11",
+              "parentUUID": "f6b7780f-8ec8-4991-933d-7a8f68ef0cc8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "drag and drop file upload",
+              "fullTitle": "file upload use cases drag and drop file upload",
+              "timedOut": null,
+              "duration": 4983,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://davidwalsh.name/demo/multiple-file-upload.php');\nvar yourFixturePath = 'image1.png';\nvar yourFixturePath1 = 'image2.jpeg';\ncy.get('#filesToUpload').attachFile(yourFixturePath).attachFile(yourFixturePath1);\ncy.get('p:nth-child(6) > strong').should('contain.text', 'Files You Selected:');",
+              "err": {},
+              "uuid": "e783c5bc-51a7-4b84-bd57-a2291f3aefcb",
+              "parentUUID": "f6b7780f-8ec8-4991-933d-7a8f68ef0cc8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "change file name while uploading",
+              "fullTitle": "file upload use cases change file name while uploading",
+              "timedOut": null,
+              "duration": 1930,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://davidwalsh.name/demo/multiple-file-upload.php');\nvar yourFixturePath = 'image1.png'; // cy.get('#filesToUpload').attachFile(yourFixturePath1);\ncy.get('#filesToUpload').attachFile({\n  filePath: yourFixturePath,\n  fileName: 'users.json'\n});\ncy.get('p:nth-child(6) > strong').should('contain.text', 'Files You Selected:');",
+              "err": {},
+              "uuid": "49e3f6e4-6d1a-4678-a57d-ad4db80cb68f",
+              "parentUUID": "f6b7780f-8ec8-4991-933d-7a8f68ef0cc8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c2eae87d-9917-4e43-8b5c-2975cea53d11",
+            "e783c5bc-51a7-4b84-bd57-a2291f3aefcb",
+            "49e3f6e4-6d1a-4678-a57d-ad4db80cb68f"
+          ],
+          "failures": [
+            "12f85bf1-a879-4cdb-b5c8-c6d08a4e6c2f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 84434,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

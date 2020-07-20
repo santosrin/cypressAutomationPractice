@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-20T02:52:54.645Z",
+    "end": "2020-07-20T02:54:14.851Z",
+    "duration": 80206,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 3,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "61f0c0c7-68c3-4336-b666-cd6db41d3d11",
+      "title": "",
+      "fullFile": "cypress/integration/sampletests/automationPractice_test.js",
+      "file": "cypress/integration/sampletests/automationPractice_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3c4ad2e7-3ee0-4950-a743-2d9e07db59da",
+          "title": "automation practice features testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should login",
+              "fullTitle": "automation practice features testing should login",
+              "timedOut": null,
+              "duration": 79976,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('include', 'controller=my-account');\ncy.get('.myaccount-link-list a').should('have.length', 5);",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `automation practice feature...`",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `automation practice feature...`\n    at timedOutWaitingForPageLoad (http://localhost:57038/__cypress/runner/cypress_runner.js:155493:13)\n    at http://localhost:57038/__cypress/runner/cypress_runner.js:156469:16\n    at tryCatcher (http://localhost:57038/__cypress/runner/cypress_runner.js:10130:23)\n    at http://localhost:57038/__cypress/runner/cypress_runner.js:5252:41\n    at tryCatcher (http://localhost:57038/__cypress/runner/cypress_runner.js:10130:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57038/__cypress/runner/cypress_runner.js:8065:31)\n    at Promise._settlePromise (http://localhost:57038/__cypress/runner/cypress_runner.js:8122:18)\n    at Promise._settlePromise0 (http://localhost:57038/__cypress/runner/cypress_runner.js:8167:10)\n    at Promise._settlePromises (http://localhost:57038/__cypress/runner/cypress_runner.js:8243:18)\n    at _drainQueueStep (http://localhost:57038/__cypress/runner/cypress_runner.js:4837:12)\n    at _drainQueue (http://localhost:57038/__cypress/runner/cypress_runner.js:4830:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57038/__cypress/runner/cypress_runner.js:4846:5)\n    at Async.drainQueues (http://localhost:57038/__cypress/runner/cypress_runner.js:4716:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:57038/__cypress/tests?p=cypress/integration/sampletests/automationPractice_test.js:6:8)",
+                "diff": null
+              },
+              "uuid": "74efff05-de9d-423c-b33a-25200259c018",
+              "parentUUID": "3c4ad2e7-3ee0-4950-a743-2d9e07db59da",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should go to HomePage",
+              "fullTitle": "automation practice features testing should go to HomePage",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.icon-chevron-left').last().click().url().should('include', 'index.php');",
+              "err": {},
+              "uuid": "09cfc137-f1bc-433b-8846-ceb06147a3d5",
+              "parentUUID": "3c4ad2e7-3ee0-4950-a743-2d9e07db59da",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should search",
+              "fullTitle": "automation practice features testing should search",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.search('Dress');\ncy.get('.lighter').contains('Dress');",
+              "err": {},
+              "uuid": "cd814f6e-5852-4972-be2f-39991cd71e1f",
+              "parentUUID": "3c4ad2e7-3ee0-4950-a743-2d9e07db59da",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "74efff05-de9d-423c-b33a-25200259c018"
+          ],
+          "pending": [],
+          "skipped": [
+            "09cfc137-f1bc-433b-8846-ceb06147a3d5",
+            "cd814f6e-5852-4972-be2f-39991cd71e1f"
+          ],
+          "duration": 79976,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

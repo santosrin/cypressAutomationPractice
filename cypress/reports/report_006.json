@@ -1,0 +1,169 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-20T02:57:58.734Z",
+    "end": "2020-07-20T02:58:42.081Z",
+    "duration": 43347,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 4,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "9f3b34d3-94c7-491b-a91c-ae4f97f695d5",
+      "title": "",
+      "fullFile": "cypress/integration/sampletests/viewport_test.js",
+      "file": "cypress/integration/sampletests/viewport_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f6fca928-8674-46de-8fd4-acb6f59561a4",
+          "title": "testing diff view ports",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "open in macbook -13",
+              "fullTitle": "testing diff view ports open in macbook -13",
+              "timedOut": null,
+              "duration": 43147,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('macbook-13');\ncy.screenshot();\ncy.wait(200);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://www.google.com/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ETIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `testing diff view ports`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://www.google.com/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ETIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `testing diff view ports`\n    at http://localhost:57038/__cypress/runner/cypress_runner.js:156433:23\n    at visitFailedByErr (http://localhost:57038/__cypress/runner/cypress_runner.js:155794:12)\n    at http://localhost:57038/__cypress/runner/cypress_runner.js:156432:11\n    at tryCatcher (http://localhost:57038/__cypress/runner/cypress_runner.js:10130:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57038/__cypress/runner/cypress_runner.js:8065:31)\n    at Promise._settlePromise (http://localhost:57038/__cypress/runner/cypress_runner.js:8122:18)\n    at Promise._settlePromise0 (http://localhost:57038/__cypress/runner/cypress_runner.js:8167:10)\n    at Promise._settlePromises (http://localhost:57038/__cypress/runner/cypress_runner.js:8243:18)\n    at _drainQueueStep (http://localhost:57038/__cypress/runner/cypress_runner.js:4837:12)\n    at _drainQueue (http://localhost:57038/__cypress/runner/cypress_runner.js:4830:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57038/__cypress/runner/cypress_runner.js:4846:5)\n    at Async.drainQueues (http://localhost:57038/__cypress/runner/cypress_runner.js:4716:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:57038/__cypress/tests?p=cypress/integration/sampletests/viewport_test.js:9:8)\n\nFrom Node.js Internals:\n  Error: ETIMEDOUT\n      at Timeout.<anonymous> (/Users/santoshsrinivas/Library/Caches/Cypress/4.10.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/@cypress/request/request.js:848:19)\n      at listOnTimeout (internal/timers.js:531:17)\n      at processTimers (internal/timers.js:475:7)\n  ",
+                "diff": null
+              },
+              "uuid": "9cf61243-69ee-44ef-ad95-9b7d185da2d0",
+              "parentUUID": "f6fca928-8674-46de-8fd4-acb6f59561a4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "open in macbook -15",
+              "fullTitle": "testing diff view ports open in macbook -15",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('macbook-15');\ncy.screenshot();\ncy.wait(200);",
+              "err": {},
+              "uuid": "ae533102-9c1b-4750-9bcc-fc012093c023",
+              "parentUUID": "f6fca928-8674-46de-8fd4-acb6f59561a4",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "open in iphone-x",
+              "fullTitle": "testing diff view ports open in iphone-x",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('iphone-x');\ncy.screenshot();\ncy.wait(200);",
+              "err": {},
+              "uuid": "264a8b60-4a4c-40ae-a816-3fcdaaba9f06",
+              "parentUUID": "f6fca928-8674-46de-8fd4-acb6f59561a4",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "open in 550 and 750",
+              "fullTitle": "testing diff view ports open in 550 and 750",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(550, 750);\ncy.screenshot();\ncy.wait(200);",
+              "err": {},
+              "uuid": "27f3a0cd-d1a2-484b-87af-576003dce07e",
+              "parentUUID": "f6fca928-8674-46de-8fd4-acb6f59561a4",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "9cf61243-69ee-44ef-ad95-9b7d185da2d0"
+          ],
+          "pending": [],
+          "skipped": [
+            "ae533102-9c1b-4750-9bcc-fc012093c023",
+            "264a8b60-4a4c-40ae-a816-3fcdaaba9f06",
+            "27f3a0cd-d1a2-484b-87af-576003dce07e"
+          ],
+          "duration": 43147,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
